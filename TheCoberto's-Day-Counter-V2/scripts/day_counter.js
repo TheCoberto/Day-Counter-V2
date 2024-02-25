@@ -11,6 +11,18 @@ world.afterEvents.worldInitialize.subscribe(
                         system.clearRun(e)
                     })
                 };
+
+                data.player.onScreenDisplay.setTitle('Day Counter', {
+                    stayDuration: 100,
+                    fadeInDuration: 2,
+                    fadeOutDuration: 4,
+                    subtitle: 'Test subtitle',
+                });
+            let dayCountDisplay = system.createDisplay("sidebar", "DayCount");
+                dayCountDisplay.setDisplayObjective(world.getDay());
+                    data.player.onScreenDisplay.setTitle('Days:', {
+                        subtitle: world.getDay()
+            });
             }
         )
     }
