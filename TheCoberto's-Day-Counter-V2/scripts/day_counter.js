@@ -13,15 +13,8 @@ world.afterEvents.worldInitialize.subscribe(
                 };
             }
         )
-        world.sendMessage("Ready! Day: " + world.getDay());
-            let dayCountDisplay = system.createDisplay("sidebar", "DayCount");
-                dayCountDisplay.setDisplayObjective(world.getDay());
-                    event.player.onScreenDisplay.setTitle('Days:', {
-                        subtitle: world.getDay()
-        });
     }
 )
-
 
 // import { world, system } from "@minecraft/server";
 
@@ -38,5 +31,11 @@ world.afterEvents.worldInitialize.subscribe(
 //                 };
 //             },
 //         )
+            // world.sendMessage("Ready! Day: " + world.getDay());
+            // let dayCountDisplay = system.createDisplay("sidebar", "DayCount");
+            //     dayCountDisplay.setDisplayObjective(world.getDay());
+            //         event.player.onScreenDisplay.setTitle('Days:', {
+            //             subtitle: world.getDay()
+            // });
 //     }
 // )
