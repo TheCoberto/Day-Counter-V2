@@ -1,0 +1,1 @@
+1.0.0 Initial Release for Minecraft Bedrock 1.20.60
