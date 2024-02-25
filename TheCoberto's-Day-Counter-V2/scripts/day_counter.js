@@ -11,11 +11,6 @@ world.afterEvents.worldInitialize.subscribe(
                         system.clearRun(e)
                     })
                 };
-            let dayCountDisplay = system.createDisplay("sidebar", "DayCount");
-                dayCountDisplay.setDisplayObjective(world.getDay());
-                    event.player.onScreenDisplay.setTitle('Days:', {
-                        subtitle: world.getDay()
-            });
             }
         )
     }
